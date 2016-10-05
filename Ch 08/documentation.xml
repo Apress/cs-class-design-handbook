@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>books_xml</name>
+    </assembly>
+    <members>
+        <member name="T:Books.Inventory">
+            <summary>
+            Inventory is a singleton class. It maintains a list of
+            Books, each referenced by a unique ID. 
+            </summary>
+            <remarks>
+            Use the static property Instance to obtain a reference to 
+            the singleton. Then use the [] syntax using the Book ID 
+            as the index to access individual Books.
+            </remarks>
+        </member>
+        <member name="F:Books.Inventory.mInstance">
+            <summary>
+            Private member field containing a reference to the 
+            singleton instance.
+            </summary>
+        </member>
+        <member name="F:Books.Inventory.mLibraryBooks">
+            <summary>
+            Hashtable containing a collection of Book objects.
+            </summary>
+        </member>
+        <member name="M:Books.Inventory.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="P:Books.Inventory.Instance">
+            <summary>
+            Instance is a static read-only property, which should
+            be used to obtain a reference to the Inventory.
+            </summary>
+        </member>
+        <member name="P:Books.Inventory.Item(System.Int32)">
+            <summary>
+            Indexer for the collection.
+            </summary>
+        </member>
+        <member name="T:Books.Book">
+            <summary>
+             The Book class
+             </summary>
+        </member>
+    </members>
+</doc>
